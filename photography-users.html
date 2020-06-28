@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>TwoHearts - Find your match</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="img/home.png" alt="home" class="nav">
+                </a>
+            </li>
+    
+            <li>
+                <a href="index.html">
+                    <img src="img/profile.png" alt="profile" class="nav">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Photography matches</h1>
+    <div id="button-container">
+    <button class="buttonsOff" id="art">
+        <a href="/art-users.html" class="off">art</a>
+    </button>
+
+    <button class="buttonsOn" id="photography">
+        <a href="/photography-users.html" class="on">photography</a>
+    </button>
+   
+    <button class="buttonsOff" id="netflix">
+        <a href="/netflix-users.html" class="off">netflix</a>
+    </button>
+    </div>
+
+
+
+    <form id="searchInterests">
+        <input type="text" name="term" placeholder="Search interest ..." id="search">
+    </form>
+
+    <div id="container">
+    
+        <div class="user" id="two">
+            <img src="img/user3.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Jimmy </a> | 20
+            </h2>
+    
+            <p class="bio"> Hi there</p>
+    
+            <p class="interests">photography</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        
+        <div class="user" id="four">
+            <img src="img/user5.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Kelvin </a> | 25
+            </h2>
+    
+            <p class="bio"> I like to go to museums</p>
+    
+            <p class="interests">art | photography</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        
+        <div class="user" id="seven">
+            <img src="img/user8.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Levi </a> | 20
+            </h2>
+    
+            <p class="bio"> Hello</p>
+    
+            <p class="interests">netflix | photography</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="js/searchbar.js"></script>
+    <script src="js/fadein.js"></script>
+</body>
+</html>

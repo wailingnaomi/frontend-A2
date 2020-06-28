@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>TwoHearts - Find your match</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="img/home.png" alt="home" class="nav" id="home">
+                </a>
+            </li>
+    
+            <li>
+                <a href="index.html">
+                    <img src="img/profile.png" alt="profile" class="nav" id="profile">
+                </a>
+            </li>
+
+            <li>
+                <button id="darkmodeToggle">
+                    <img src="img/lightmode.png" alt="profile" class="nav" id="lightmode">
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 id="h1">Find your match.</h1>
+    <div id="button-container">
+    <button class="buttonsOff" id="art">
+        <a href="/art-users.html" class="off">art</a>
+    </button>
+
+    <button class="buttonsOff" id="photography">
+        <a href="/photography-users.html" class="off">photography</a>
+    </button>
+   
+    <button class="buttonsOff" id="netflix">
+        <a href="/netflix-users.html" class="off">netflix</a>
+    </button>
+    </div>
+
+
+    <form id="searchInterests">
+        <input type="text" name="term" placeholder="Search interest ..." id="search">
+    </form>
+
+    <div id="container">
+    
+        <div class="user" id="one">
+            <img src="img/user1.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Jason </a> |
+                22
+            </h2>
+    
+            <p class="bio"> Hi there</p>
+    
+            <p class="interests">art</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        <div class="user" id="two">
+            <img src="img/user3.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Jimmy </a> | 20
+            </h2>
+    
+            <p class="bio"> Hi there</p>
+    
+            <p class="interests">photography</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        <div class="user" id="three">
+            <img src="img/user4.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Sam </a> | 23
+            </h2>
+    
+            <p class="bio"> I love my puppy</p>
+    
+            <p class="interests">puppies | music | art</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        <div class="user" id="four">
+            <img src="img/user5.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Kelvin </a> | 25
+            </h2>
+    
+            <p class="bio"> I like to go to museums</p>
+    
+            <p class="interests">art | photography</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        <div class="user" id="five">
+            <img src="img/user6.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Justin </a> | 24
+            </h2>
+    
+            <p class="bio"> I got my vibes</p>
+    
+            <p class="interests">netflix</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        <div class="user" id="six">
+            <img src="img/user7.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Jason </a> | 24
+            </h2>
+    
+            <p class="bio"> I'd love to travel the world</p>
+    
+            <p class="interests">traveling</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        <div class="user" id="seven">
+            <img src="img/user8.jpg" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Levi </a> | 20
+            </h2>
+    
+            <p class="bio"> Hello</p>
+    
+            <p class="interests">netflix | photography</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+        <div class="user" id="eight">
+            <img src="img/user9.png" alt="profileIMG" class="profileIMG">
+    
+            <h2 class="username">
+                <a href="index.html" class="linkProfile"> Henry </a> | 25
+            </h2>
+    
+            <p class="bio"> Travel and music</p>
+    
+            <p class="interests">traveling | music</p>
+    
+            <div class="likeDislike">
+    
+                <button class="likeDislikeBTN">
+    
+                    <img src="img/dislike.png" alt="profile" class="likeDislikeIMG" id=dislike
+                        data-value="<%= data[userInfo]._id %>">
+    
+                </button>
+    
+                <button class="likeDislikeBTN">
+                    <img src="img/like.png" alt="profile" class="likeDislikeIMG">
+                </button>
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="js/searchbar.js"></script>
+    <script src="js/fadein.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>

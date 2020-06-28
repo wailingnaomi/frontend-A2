@@ -1,0 +1,243 @@
+:root {
+    --mainColor: #484E5D;
+    /*var(--mainColor)*/
+    --secondColor: #CCD0D7;
+    /*var(--secondColor)*/
+    --boxShadow: #E9E9E9;
+    /*var(--boxShadow)*/
+    --textShadow: #CCD0D7;
+    /*var(--textShadow)*/
+    --background: transparent;
+}
+
+.darkmode {
+    --mainColor: #CCD0D7;
+    /*var(--mainColor)*/
+    --secondColor: #CCD0D7;
+    /*var(--secondColor)*/
+    --boxShadow: transparant;
+    /*var(--boxShadow)*/
+    --textShadow: transparant;
+    /*var(--textShadow)*/
+    --background: #484E5D;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: var(--background);
+}
+
+/*********************
+    NAVIGATION BAR
+**********************/
+
+ul {
+    list-style-type: none;
+    display: flex;
+    max-width: 50%;
+    height: 10%;
+    margin: 2em auto 0 auto;
+    padding: 0;
+}
+
+li:last-child {
+    margin-left: 50%;
+}
+
+li {
+    margin: 0 5%;
+}
+
+.nav {
+    max-height: 3em;
+}
+
+#darkmodeToggle {
+    display: none;
+    background-color: transparent;
+    border-style: none;
+}
+
+/*****************
+    PAGE TITLE
+******************/
+h1 {
+    color: var(--mainColor);
+    text-shadow: 2px 2px var(--textShadow);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*********************
+    RESPONSIVE GRID
+**********************/
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-gap: 1.5em;
+    justify-items: center;
+}
+
+.user {
+    border-radius: 5%;
+    background-color: var(--secondColor);
+    max-width: 15em;
+    height: 100%;
+    box-shadow: 5px 5px 5px var(--boxShadow);
+    padding: 24px;
+}
+
+/***************
+    INTEREST BUTTONS
+****************/
+#button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+
+}
+
+.buttonsOn {
+    margin: 0 2em 0 2em;
+    height: 4em;
+    padding: 10px;
+    border-radius: 3rem;
+    background: var(--mainColor);
+}
+
+.buttonsOff {
+    margin: 0 2em 0 2em;
+    height: 4em;
+    padding: 10px;
+    border-radius: 3rem;
+    border-color: var(--mainColor);
+    border-width: 3px;
+    border-style: solid;
+}
+
+#art {
+    width: 5em;
+}
+
+#photography {
+    width: 10em;
+}
+
+#netflix {
+    width: 6em
+}
+
+.on {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.off {
+    text-align: center;
+    text-decoration: none;
+    color: #484E5D;
+}
+
+
+
+
+
+/***************
+    SEARCHBAR
+****************/
+#searchInterests {
+    display: none;
+}
+
+
+#search {
+    display: block;
+    margin: 0 auto 4em auto;
+    width: 50%;
+    height: 4em;
+    padding: 10px;
+    border-radius: 3rem;
+    border-color: var(--mainColor);
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 2px 2px var(--boxShadow);
+    background-color: transparent;
+}
+
+/********************
+    USERS STYLING
+*********************/
+.fadeIn {
+    opacity: 1;
+}
+
+.profileIMG {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+
+.linkProfile {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+
+.username::first-letter {
+    text-transform: uppercase;
+}
+
+.username {
+    color: var(--mainColor);
+    font-size: 1.2em;
+}
+
+.bio {
+    font-size: 0.8em;
+}
+
+.likeDislike {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    align-items: center;
+}
+
+.likeDislikeBTN {
+    margin: 1em auto 0 auto;
+    background-color: transparent;
+    border: none;
+}
+
+.likeDislikeIMG {
+    width: 3em;
+}
+
+.interests {
+    width: 192px;
+}
+
+.interestsContainer {
+    display: inline-grid;
+    grid-template-rows: 1fr;
+
+}
+
+
+.interestsContainer p {
+    font-size: 0.8em;
+    margin: 0 .5em 1em 0;
+    border-radius: 5%;
+    border: 1px solid #fff;
+    width: auto;
+    padding: 0 5px 0 5px;
+}
